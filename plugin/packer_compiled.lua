@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/Users/reid.lin/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["diffview.nvim"] = {
+    loaded = true,
+    path = "/Users/reid.lin/.local/share/nvim/site/pack/packer/start/diffview.nvim",
+    url = "https://github.com/sindrets/diffview.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/reid.lin/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -180,6 +185,11 @@ _G.packer_plugins = {
     needs_bufread = false,
     path = "/Users/reid.lin/.local/share/nvim/site/pack/packer/opt/nvim-ts-autotag",
     url = "https://github.com/windwp/nvim-ts-autotag"
+  },
+  ["nvim-ts-rainbow2"] = {
+    loaded = true,
+    path = "/Users/reid.lin/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow2",
+    url = "https://github.com/HiPhish/nvim-ts-rainbow2"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
