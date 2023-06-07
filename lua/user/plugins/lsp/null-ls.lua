@@ -16,6 +16,12 @@ null_ls.setup({
 	-- setup formatters & linters
 	sources = {
 		--  to disable file types use
+		formatting.prettier.with({
+			disabled_filetypes = {
+				"yaml",
+				"yml",
+			},
+		}),
 		--  "formatting.prettier.with({disabled_filetypes = {}})" (see null-ls docs)
 		formatting.prettier, -- js/ts formatter
 		formatting.stylua, -- lua formatter

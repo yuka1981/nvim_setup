@@ -6,6 +6,14 @@ local keymap = vim.keymap -- for conciseness
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
 
+-- page up / page down
+keymap.set("n", "<C-u>", "9k")
+keymap.set("n", "<C-d>", "9j")
+
+-- continue indent
+keymap.set("v", "<", "<gv")
+keymap.set("v", ">", ">gv")
+
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
@@ -17,6 +25,11 @@ keymap.set("n", "<leader>+", "<C-a>") -- increment
 keymap.set("n", "<leader>-", "<C-x>") -- decrement
 
 -- window management
+keymap.set("n", "sv", ":vsp<CR>") -- split window vertically
+keymap.set("n", "sh", ":sp<CR>") -- split window horizontally
+keymap.set("n", "sc", "<C-w>c") -- colse current window
+keymap.set("n", "so", "<C-w>o") -- close others
+
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
@@ -43,4 +56,3 @@ keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in 
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
-
